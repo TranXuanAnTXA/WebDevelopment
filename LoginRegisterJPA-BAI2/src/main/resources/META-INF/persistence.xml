@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.2">
+    <!-- Tên persistence-unit này sẽ được dùng trong code Java -->
+    <persistence-unit name="LoginRegisterJPA_API" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <!-- Khai báo class Entity của bạn -->
+        <class>com.baitap.model.User</class>
+
+        <properties>
+            <!-- Cấu hình kết nối Database -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=WEB_USER;encrypt=false;"/>
+            <property name="jakarta.persistence.jdbc.user" value="sa"/>
+            <property name="jakarta.persistence.jdbc.password" value="123456"/>
+
+            <!-- Cho phép Hibernate in ra câu SQL thật ở console để dễ debug -->
+            <property name="hibernate.show_sql" value="true"/>
+            
+            <!-- Tự động tạo hoặc cập nhật bảng dựa trên class User -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>

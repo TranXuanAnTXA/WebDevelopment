@@ -1,0 +1,21 @@
+SET QUOTED_IDENTIFIER ON;
+GO
+
+CREATE TABLE Category (
+    [cate_id] INT IDENTITY(1,1) NOT NULL,
+    [cate_name] NVARCHAR(255) NOT NULL,
+    [icons] NVARCHAR(255) NULL,
+
+    PRIMARY KEY CLUSTERED (
+        [cate_id] ASC
+    )
+    WITH (
+        PAD_INDEX = OFF,
+        STATISTICS_NORECOMPUTE = OFF,
+        IGNORE_DUP_KEY = OFF,
+        ALLOW_ROW_LOCKS = ON,
+        ALLOW_PAGE_LOCKS = ON
+    ) ON [PRIMARY]
+) ON [PRIMARY];
+
+GO

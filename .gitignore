@@ -1,0 +1,18 @@
+# Eclipse / Spring Tools workspace
+.metadata/
+Servers/
+
+# Java / Maven build
+**/target/
+**/bin/
+**/build/
+
+# Compiled Java
+*.class
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store

@@ -129,6 +129,11 @@ public class ProfileController extends HttpServlet {
                     user
             );
 
+         // Tạo thông báo thành công
+            session.setAttribute(
+                    "successMessage",
+                    "Cập nhật thông tin thành công!"
+            );
             // Quay lại Profile
             response.sendRedirect(
                     request.getContextPath()

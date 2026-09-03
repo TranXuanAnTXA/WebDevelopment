@@ -12,7 +12,7 @@ public class UserDaoImpl implements UserDao {
 
     // Kết nối JPA thông qua persistence.xml
     private static EntityManagerFactory emf =
-            Persistence.createEntityManagerFactory("LoginRegisterJPA_API");
+            Persistence.createEntityManagerFactory("LoginRegisterJPA-BAI2");
 
     // =====================================================
     // 1. GET USER BY USERNAME

@@ -7,7 +7,7 @@ import jakarta.persistence.Persistence;
 public class JPAConfig {
 
     private static final EntityManagerFactory emf =
-            Persistence.createEntityManagerFactory("CRUDCategoryJPA_API");
+            Persistence.createEntityManagerFactory("CRUDCategoryJPA-BAI2");
 
     public static EntityManager getEntityManager() {
         return emf.createEntityManager();

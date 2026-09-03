@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tranxuanan</groupId>
-	<artifactId>LoginRegister</artifactId>
+	<artifactId>LoginRegister-BAI1</artifactId>
 	<version>1</version>
 	<packaging>war</packaging>
 	<dependencies>
